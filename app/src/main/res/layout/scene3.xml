@@ -1,0 +1,97 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/acurtain"
+    android:gravity="center_horizontal"
+    >
+
+    <!-- <linearlayout android:focusable="true" android:focusableInTouchMode="true" android:layout_height="0px" android:layout_width="0px"> -->
+    <!--  </linearlayout> -->
+
+
+    <Button
+        android:id="@+id/send2"
+        android:layout_width="285dp"
+        android:layout_height="50dp"
+        android:background="#59F44336"
+        android:text="距离传感器检测"></Button>
+
+    <Button
+        android:id="@+id/send1"
+        android:layout_width="282dp"
+        android:layout_height="wrap_content"
+        android:background="#59A480C6"
+        android:text="颜色传感器检测" />
+
+
+    <TextView
+        android:id="@+id/label1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/fromDataLabel" />
+
+    <com.friendlyarm.Utils.BorderScrollView
+        android:id="@+id/scroolView"
+        android:layout_width="fill_parent"
+        android:layout_height="70dp"
+        android:layout_weight="1"
+        android:background="#FFFFFF">
+
+        <TextView
+            android:id="@+id/fromTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFFFFF"
+            android:singleLine="false"
+            android:gravity="top"
+            android:textColor="#000000" />
+    </com.friendlyarm.Utils.BorderScrollView>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#66FFFFFF"
+        android:text="打开串口" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="舵机检测" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#80FFFFFF"
+            android:text="检测1"
+            android:textColor="@color/black"/>
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#80FFFFFF"
+            android:text="检测2"
+            android:textColor="@color/black"/>
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#80FFFFFF"
+            android:text="检测3"
+            android:textColor="@color/black"/>
+    </LinearLayout>
+
+</LinearLayout>
